@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.9.7, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="../static/assets/images/cctv_white.png" type="image/x-icon">
+    <meta name="description" content="">
+
+    <title>Fall Detection</title>
+    <link rel="stylesheet" href="../static/assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="../static/assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+    <link rel="stylesheet" href="../static/assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="../static/assets/tether/tether.min.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../static/assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="../static/assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="../static/assets/theme/css/style.css">
+    <link rel="stylesheet" href="../static/assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../static/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/main.css">
+
+
+
+</head>
+
+<body>
+    <section class="menu cid-s3MrIgmP7I" once="menu" id="menu1-b">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js" -->
+        <!-- integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"
+            integrity="sha512-/xb5+PNOA079FJkngKI2jvID5lyiqdHXaUUcfmzE0X0BdpkgzIWHC59LOG90a2jDcOyRsd1luOr24UCCAG8NNw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <nav
+            class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="http://localhost:5000/login_index">
+                            <img src="../static/assets/images/cctv.png" alt="AISS" title="" style="height: 3.8rem;">
+                        </a>
+                    </span>
+
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="http://localhost:5000/login_index"><span
+                                class="mbrib-home mbr-iconfont mbr-iconfont-btn"></span>
+                            Home</a>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link link text-white display-4"
+                            href="https://pjreddie.com/darknet/yolo/"><span
+                                class="mobi-mbri mobi-mbri-video-play mbr-iconfont mbr-iconfont-btn"></span>
+                            YOLO</a></li> -->
+
+                    <li class="nav-item"><a class="nav-link link text-white display-4"
+                            href="http://localhost:5000/"><span
+                                class="mobi-mbri mbri-login mbr-iconfont mbr-iconfont-btn"></span>
+                            Logout</a>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link link text-white display-4"
+                            href="http://localhost:5000/contactus"><span
+                                class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
+                            Contact Us</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link link text-white display-4"
+                            href="https://github.com/vibhorkrishna/S.H.A.D.Y"><span
+                                class="mbrib-github mbr-iconfont mbr-iconfont-btn"></span>
+                            Github</a></li> -->
+
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+
+    <!-- <section class="engine"><a href="https://mobirise.info/c">web builder</a></section> -->
+    <section class="header12 cid-s3RnaSCmcQ mbr-fullscreen mbr-parallax-background" id="header12-r">
+        <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(35, 35, 35);">
+        </div>
+
+        <div class="container  ">
+            <div class="media-container">
+                <div class="col-md-12 align-center">
+                    <h1 class="mbr-section-title pb-2 mbr-white mbr-bold mbr-fonts-style display-1">Fall Detection
+                    </h1>
+                    <select name="camera-options" id="camera-options" class="custom-select" style="width:500px">
+                        <option value="">Select camera</option>
+                    </select>
+                    
+                    <!-- <div class="wrap-link100 mx-auto p-t-190 p-b-30">
+
+                        <div class="wrap-input100 validate-input m-b-10" data-validate="Video link is required">
+                            <input class="input100 align-center" type="text" name="videolink"
+                                placeholder="Enter Video Link">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-youtube-play"></i>
+                            </span>
+                        </div>
+                    </div> -->
+
+                    <div class="mbr-section-btn align-center py-2">
+                        <a class="btn btn-md btn-secondary display-4" id="start-camera">Detect Fall</a>
+                        <br>
+                        <video autoplay="true" id="videoElement" width="640" height="480" style="display: none"></video>
+                        <canvas id="canvasElement" width="640" height="640" style="display: none"></canvas>
+                        <img id="photo" width="640" height="640"
+                            style="border: 5px solid; border-color:#ff3366; display: none;"></img>
+                        <!-- <button id="click-photo">Click Photo</button>
+                        <canvas id="canvas" width="320" height="240"></canvas> -->
+
+                        <script>
+                            var socket;
+                            var localMediaStream;
+                            let camera_button = document.querySelector("#start-camera");
+                            let photo = document.getElementById("photo");
+                            let canvas = document.getElementById("canvasElement");
+                            let video = document.getElementById("videoElement");
+                            let cameraOptions = document.getElementById('camera-options');
+                            var constraints;
+                            var intervalfunc;
+                            const getCameraSelection = async () => {
+                                const devices = await navigator.mediaDevices.enumerateDevices();
+                                const videoDevices = devices.filter(device => device.kind === 'videoinput');
+                                console.log(videoDevices);
+                                const options = videoDevices.map(videoDevice => {
+                                    if (videoDevice.deviceId == "") {
+                                        return `<option value="0">Default</option>`;
+                                    }
+                                    return `<option value="${videoDevice.deviceId}">${videoDevice.label}</option>`;
+                                });
+                                cameraOptions.innerHTML = options.join('');
+                                constraints = {
+                                    video: {
+                                        width: { min: 300 },
+                                        height: { min: 150 },
+                                    }
+                                };
+                                console.log("constraints init");
+                            }
+                            
+
+                            cameraOptions.addEventListener('change', function () {
+                                constraints = {
+                                    video: {
+                                        width: { min: 300 },
+                                        height: { min: 150 },
+                                        deviceId: { exact: cameraOptions.value }
+                                    }
+                                
+
+                            };
+                            console.log(constraints);
+                            });
+                            
+                                    
+                            camera_button.addEventListener('click', async function () {
+                                if (camera_button.innerHTML == "Detect Fall") {
+                                    let namespace = "/test";
+                                    camera_button.innerHTML = "Stop";
+                                    photo.style.display = "inline";
+                                    cameraOptions.style.display = "none"
+                                    let ctx = canvas.getContext('2d');
+                                    // photo = document.getElementById('photo');
+                                    localMediaStream = null;
+
+                                    // socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);
+                                    socket = io("http://localhost:5000/test");
+                                    function sendSnapshot() {
+                                        if (!localMediaStream) {
+                                            return;
+                                        }
+
+                                        ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight, 0, 0, 640, 640);
+                                        // console.log(video.videoWidth, video.videoHeight)
+                                        // ctx.drawImage(video, 0, 0, video.videoWidth, )
+                                        let dataURL = canvas.toDataURL('image/jpeg', 0.3);
+                                        socket.emit('input image', dataURL);
+
+                                        // var img = new Image();
+                                        socket.on('out-image-event', function (data) {
+                                            // img.src = dataURL//data.image_data
+                                            photo.setAttribute('src', data.image_data);
+                                        });
+                                    }
+
+                                    socket.on('connect', function () {
+                                        console.log('Connected!');
+                                    });
+                                    
+                                    navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
+                                        localMediaStream = stream;
+                                        video.srcObject = stream;
+                                        intervalfunc = setInterval(function () {
+                                            sendSnapshot();
+                                        }, 100);
+                                    }).catch(function (error) {
+                                        console.log(error);
+                                    });
+                                }
+                                else {
+                                    // socket.emit("disconnect");
+                                    localMediaStream.getTracks().forEach(async function (track) {
+                                        track.stop();
+                                        clearInterval(intervalfunc);
+                                        console.log("disconnected");
+                                    });
+                                    socket.disconnect(true);
+                                    socket.removeAllListeners();
+                                    socket.close();
+                                    photo.style.display = "none";
+                                    cameraOptions.style.display = "inline";
+                                    camera_button.innerHTML = "Detect Fall";
+
+                                    // console.log("disconneted");
+                                }
+
+
+                            }
+
+                            );
+                            cameraOptions.onload(getCameraSelection());
+
+                        </script>
+                    </div>
+
+
+
+                    <!-- <div class="icons-media-container mbr-white">
+                        <div class="card col-12 col-md-6">
+
+                            <h5 class="mbr-fonts-style display-5"></h5>
+                        </div>
+
+                        <div class="card col-12 col-md-6">
+
+                            <h5 class="mbr-fonts-style display-5"></h5>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-s3RGpsEpwI" id="footer1-1b">
+        <div class="container">
+            <div class="media-container-row content text-white">
+                <div class="col-12 col-md-3">
+                    <div class="media-wrap">
+                        <a href="http://localhost:5000/login_index">
+                            <img src="../static/assets/images/cctv.png" alt="AISS" title="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Address
+                    </h5>
+                    <p class="mbr-text">Fr. Agnel, Vashi
+                        <br>Navi Mumbai, Maharashtra
+                        <br>400703
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Contacts
+                    </h5>
+                    <p class="mbr-text">
+                        Email: aryankoul290301@gmail.com
+                        <br>Phone: 9858222829
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-4">
+                    <h5 class="pb-3">
+                        Links
+                    </h5>
+                    <p class="mbr-text">
+                        <a class="text-primary" href="https://pjreddie.com/darknet/yolo/" target="_blank">Yolo</a>
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="media-container-row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="media-container-row mbr-white">
+                    <div class="col-sm-6 copyright">
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            © Copyright 2022 Fr. Agnel - All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-list align-right">
+                            <div class="soc-item">
+                                <a href="https://twitter.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.youtube.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../static/assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="../static/assets/popper/popper.min.js"></script>
+    <script src="../static/assets/tether/tether.min.js"></script>
+    <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/assets/parallax/jarallax.min.js"></script>
+    <script src="../static/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="../static/assets/dropdown/js/script.min.js"></script>
+    <script src="../static/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="../static/assets/theme/js/script.js"></script>
+
+
+</body>
+
+</html>

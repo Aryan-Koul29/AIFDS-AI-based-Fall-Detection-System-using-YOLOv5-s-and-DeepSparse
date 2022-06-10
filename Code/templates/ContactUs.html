@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.9.7, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="../static/assets/images/cctv_white.png" type="image/x-icon">
+    <meta name="description" content="">
+
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../static/assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+    <link rel="stylesheet" href="../static/assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="../static/assets/tether/tether.min.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../static/assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="../static/assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="../static/assets/theme/css/style.css">
+    <link rel="stylesheet" href="../static/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+
+<body>
+    <section class="menu cid-s3MrIgmP7I" once="menu" id="menu1-a">
+
+
+
+        <nav
+            class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="http://localhost:5000/login_index">
+                            <img src="../static/assets/images/cctv.png" alt="AISS" title="" style="height: 3.8rem;">
+                        </a>
+                    </span>
+
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="http://localhost:5000/login_index"><span
+                                class="mbrib-home mbr-iconfont mbr-iconfont-btn"></span>
+                            Home</a>
+                    </li>
+                    {% if status==False %}
+                    <li class="nav-item"><a class="nav-link link text-white display-4"
+                            href="http://localhost:5000/login/index"><span
+                                class="mobi-mbri mbri-login mbr-iconfont mbr-iconfont-btn"></span>
+                            Login</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link link text-white display-4"
+                        href="http://localhost:5000/"><span
+                            class="mobi-mbri mbri-login mbr-iconfont mbr-iconfont-btn"></span>
+                        Logout</a>
+                </li>
+                {% endif %}
+                    <!-- <li class="nav-item"><a class="nav-link link text-white display-4"
+                            href="https://pjreddie.com/darknet/yolo/"><span
+                                class="mobi-mbri mobi-mbri-video-play mbr-iconfont mbr-iconfont-btn"></span>
+                            YOLO</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link link text-white display-4" href="http://localhost:5000/contactus"><span
+                                class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
+                            Contact Us</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link link text-white display-4"
+                            href="https://github.com/vibhorkrishna/S.H.A.D.Y"><span
+                                class="mbrib-github mbr-iconfont mbr-iconfont-btn"></span>
+                            Github</a></li> -->
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="https://mobirise.co">
+                        </a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+
+    <section class="engine"><a href="https://pjreddie.com/darknet/yolo/">YOLO</a></section>
+    <section class="mbr-section form1 cid-s3RngtCkmS mbr-parallax-background" id="form1-t">
+
+
+
+        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);">
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="title col-12 col-lg-8">
+                    <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
+                        CONTACT FORM
+                    </h2>
+                    <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">Ask us
+                        anything.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="media-container-column col-lg-8" >
+                    <!---Formbuilder Form--->
+                    <form action="http://localhost:5000/feedback" method="POST" id="feedback_form" class="mbr-form form-with-styler"
+                        data-form-title="AISS Form">
+                        
+                        
+                        <div class="dragArea row row-sm-offset">
+                            <div class="col-md-4  form-group" data-for="name">
+                                <label for="name-form1-t"
+                                    class="form-control-label mbr-fonts-style display-7">Name</label>
+                                <input type="text" name="feed_name" data-form-field="Name" required="required"
+                                maxlength = 100 class="form-control display-7" id="name-form1-t">
+                            </div>
+                            <div class="col-md-4  form-group" data-for="email">
+                                <label for="email-form1-t"
+                                    class="form-control-label mbr-fonts-style display-7">Email</label>
+                                <input type="email" name="feed_email" data-form-field="Email" required="required"
+                                    maxlength = 200 class="form-control display-7" id="email-form1-t">
+                            </div>
+                            <div data-for="phone" class="col-md-4  form-group">
+                                <label for="phone-form1-t"
+                                    class="form-control-label mbr-fonts-style display-7">Phone</label>
+                                <input type="tel" name="feed_phone" data-form-field="Phone" maxlength = 13 class="form-control display-7" required
+                                    id="phone-form1-t">
+                            </div>
+                            <div data-for="message" class="col-md-12 form-group">
+                                <label for="message-form1-t"
+                                    class="form-control-label mbr-fonts-style display-7">Message</label>
+                                <textarea name="comments" data-form-field="Message" class="form-control display-7" maxlength = 500
+                                    id="message-form1-t" required></textarea>
+                            </div>
+                            <div class="col-md-12 input-group-btn align-center"><button type="submit"
+                                    class="btn btn-primary btn-form display-4" onClick="document.getElementById('feedback_form').submit()"
+                                    >SEND MESSAGE</button></div>
+                        </div>
+                    </form>
+                    <!---Formbuilder Form--->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cid-s3RGrykjuP" id="footer1-1c">
+
+
+
+
+
+        <div class="container">
+            <div class="media-container-row content text-white">
+                <div class="col-12 col-md-3">
+                    <div class="media-wrap">
+                        <a href="http://localhost:5000/login_index">
+                            <img src="../static/assets/images/cctv.png" alt="AISS" title="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Address
+                    </h5>
+                    <p class="mbr-text">Fr. Agnel, Vashi
+                        <br>Navi Mumbai, Maharashtra
+                        <br>400703
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Contacts
+                    </h5>
+                    <p class="mbr-text">
+                        Email: aryankoul290301@gmail.com
+                        <br>Phone: 9858222829
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-4">
+                    <h5 class="pb-3">
+                        Links
+                    </h5>
+                    <p class="mbr-text">
+                        <a class="text-primary" href="https://pjreddie.com/darknet/yolo/" target="_blank">Yolo</a>
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="media-container-row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="media-container-row mbr-white">
+                    <div class="col-sm-6 copyright">
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            © Copyright 2022 Fr. Agnel - All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-list align-right">
+                            <div class="soc-item">
+                                <a href="https://twitter.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.youtube.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../static/assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="../static/assets/popper/popper.min.js"></script>
+    <script src="../static/assets/tether/tether.min.js"></script>
+    <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/assets/dropdown/js/script.min.js"></script>
+    <script src="../static/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="../static/assets/parallax/jarallax.min.js"></script>
+    <script src="../static/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="../static/assets/theme/js/script.js"></script>
+    <script src="../static/assets/formoid/formoid.min.js"></script>
+
+
+</body>
+
+</html>

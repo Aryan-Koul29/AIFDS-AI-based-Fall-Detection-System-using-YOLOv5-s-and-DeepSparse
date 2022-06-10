@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.9.7, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="../static/assets/images/cctv_white.png" type="image/x-icon">
+    <meta name="description" content="">
+
+    <title>AISS</title>
+    <link rel="stylesheet" href="../static/assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="../static/assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+    <link rel="stylesheet" href="../static/assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="../static/assets/tether/tether.min.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../static/assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="../static/assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="../static/assets/theme/css/style.css">
+    <link rel="stylesheet" href="../static/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+    <style>
+        body {
+            font-size: 0.9em;
+            color: #ffffff;
+            font-family: Arial;
+        }
+
+        #frm-mobile-verification {
+            /*border: #E0E0E0 1px solid;*/
+            border-radius: 3px;
+            padding: 30px;
+            text-align: center;
+            width: 500px;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            /*background: #fff;*/
+        }
+
+        .form-heading {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .form-row {
+            margin-bottom: 30px;
+        }
+
+
+        .btnVerify {
+            background: #4CAF50;
+            padding: 8px 20px;
+            border: #4CAF50 2px solid;
+            border-radius: 5px;
+            width: 350px;
+            color: #FFF;
+        }
+
+        .btnOTP {
+            background: #0cafe0;
+            padding: 8px 20px;
+            border: #0cafe0 2px solid;
+            border-radius: 5px;
+            width: 350px;
+            color: #FFF;
+        }
+
+        .inputs input {
+            width: 40px;
+            height: 40px
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    {% with messages = get_flashed_messages() %} 
+    {% if messages %} 
+      {% for message in messages %}
+      <div class="alert alert-warning" style="margin-top: 100px;">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+      {% endfor %} 
+    {% endif %} 
+  {% endwith %}
+    <section class="menu cid-s3MrIgmP7I" once="menu" id="menu1-5">
+        <nav
+            class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="index.html">
+                            <img src="../static/assets/images/cctv.png" alt="AISS" title="" style="height: 3.8rem;">
+                        </a>
+                    </span>
+
+                </div>
+            </div>
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="index.html"><span
+                                class="mbrib-home mbr-iconfont mbr-iconfont-btn"></span>
+                            Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4"
+                            href="https://pjreddie.com/darknet/yolo/"><span
+                                class="mobi-mbri mobi-mbri-video-play mbr-iconfont mbr-iconfont-btn"></span>
+                            YOLO</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="login.html"><span
+                                class="mobi-mbri mbri-login mbr-iconfont mbr-iconfont-btn"></span>
+                            Login</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="ContactUs.html"><span
+                                class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
+                            Contact Us</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4"
+                            href="https://github.com/vibhorkrishna/S.H.A.D.Y"><span
+                                class="mbrib-github mbr-iconfont mbr-iconfont-btn"></span>
+                            Github</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="https://mobirise.co">
+                        </a></li>
+                </ul>
+
+            </div> -->
+        </nav>
+    </section>
+
+    <!-- <section class="engine"><a href="https://mobirise.info/p">website templates free download</a></section> -->
+
+    <section class="header12 cid-s3Mrg3sUiE mbr-fullscreen mbr-parallax-background" id="header12-1">
+        <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(35, 35, 35);">
+        </div>
+        
+        <div class="container">
+            <div class="media-container">
+                <div class="col-md-12 align-center">
+                    <form id="frm-mobile-verification" method="POST">
+                        <div class="form-row justify-content-center">
+                            <label><h2>OTP is sent to Your Email ID</h2></label>
+                        </div>
+
+                        <div class="form-row justify-content-center">
+                            <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2">
+                                <input class="m-2 text-center form-control rounded" type="text" id="first" maxlength="1"
+                                    name="otp" />
+                                <input class="m-2 text-center form-control rounded" type="text" id="second"
+                                    maxlength="1" name="otp" />
+                                <input class="m-2 text-center form-control rounded" type="text" id="third" maxlength="1"
+                                    name="otp" />
+                                <input class="m-2 text-center form-control rounded" type="text" id="fourth"
+                                    maxlength="1" name="otp" />
+                                <input class="m-2 text-center form-control rounded" type="text" id="fifth" maxlength="1"
+                                    name="otp" />
+                                <input class="m-2 text-center form-control rounded" type="text" id="sixth" maxlength="1"
+                                    name="otp" />
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <button id="verify" class="btnVerify" value="Verify"
+                                onclick="document.getElementById('frm-mobile-verification').action = 'http://localhost:5000/authenticate'">
+                                Verify</button>
+                        </div>
+
+                        <br>
+
+                        <div class="row justify-content-center">
+                            <button class="btnOTP" value="Resend OTP"
+                                onclick="document.getElementById('frm-mobile-verification').action = 'http://localhost:5000/resend_verify'">
+                                Resend OTP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="cid-s3MrrUyL0E" id="footer1-3">
+
+
+
+
+
+        <div class="container">
+            <div class="media-container-row content text-white">
+                <div class="col-12 col-md-3">
+                    <div class="media-wrap">
+                        <a href="index.html">
+                            <img src="../static/assets/images/cctv.png" alt="AISS" title="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Address
+                    </h5>
+                    <p class="mbr-text">Fr. Agnel, Vashi
+                        <br>Navi Mumbai, Maharashtra
+                        <br>400703
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Contacts
+                    </h5>
+                    <p class="mbr-text">
+                        Email: aryankoul290301@gmail.com
+                        <br>Phone: 9858222829
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-4">
+                    <h5 class="pb-3">
+                        Links
+                    </h5>
+                    <p class="mbr-text">
+                        <a class="text-primary" href="https://pjreddie.com/darknet/yolo/">Yolo</a>
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="media-container-row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="media-container-row mbr-white">
+                    <div class="col-sm-6 copyright">
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            © Copyright 2022 Fr. Agnel - All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-list align-right">
+                            <div class="soc-item">
+                                <a href="https://twitter.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.youtube.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../static/assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="../static/assets/popper/popper.min.js"></script>
+    <script src="../static/assets/tether/tether.min.js"></script>
+    <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+    <script src="../static/assets/parallax/jarallax.min.js"></script>
+    <script src="../static/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="../static/assets/dropdown/js/script.min.js"></script>
+    <script src="../static/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="../static/assets/theme/js/script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            function OTPInput() {
+                const inputs = document.querySelectorAll('#otp > *[id]');
+                for (let i = 0; i < inputs.length; i++) {
+                    inputs[i].addEventListener('keydown', function (event) {
+                        if (event.key === "Backspace") {
+                            inputs[i].value = '';
+                            if (i !== 0)
+                                inputs[i - 1].focus();
+                            event.preventDefault();
+                        }
+
+                        else {
+                            if (i === inputs.length - 1 && inputs[i].value !== '') {
+                                return true;
+                            }
+
+                            else if (event.keyCode > 47 && event.keyCode < 58) {
+                                if (inputs[i].value === "") {
+                                    inputs[i].value = event.key;
+                                    if (i !== inputs.length - 1)
+                                        inputs[i + 1].focus();
+                                    event.preventDefault();
+                                }
+                                else {
+                                    inputs[i + 1].focus();
+                                    inputs[i + 1].value = event.key;
+                                    event.preventDefault();
+                                }
+                            }
+
+                            else if (event.keyCode > 64 && event.keyCode < 91) {
+                                event.preventDefault();
+                            }
+                        }
+                    }
+                    );
+                }
+            } OTPInput();
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).keypress(function (e) {
+            var keycode = e.which;
+            if (keycode == 13) {
+                $(".btnVerify").click();
+                return e.preventDefault();
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
